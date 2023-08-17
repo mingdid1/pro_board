@@ -1,5 +1,6 @@
 <h3>boardList.ejs</h3>
 
+전체 글 개수 : <%= totalContent %>
 <table border="1">
     <tr>
         <th>글 번호</th> <th>제목</th> <th> 등록날짜</th> <th>조회수</th> <th>좋아요</th>
@@ -23,9 +24,7 @@
     <% } %>
     
     <tr>
-        if문으로 id값 없으면 없애기
-
-        
         <td><a href="/write_form">글 등록</a></td>
     </tr>
+        
 </table>

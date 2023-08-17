@@ -19,6 +19,10 @@ router.post("/write", pCtrl.process.write);
 router.get("/modify_form/:num", pCtrl.views.modifyForm);
 router.post("/modify", pCtrl.process.modify);
 
+router.get("/delete/:num", pCtrl.process.delete);
+
+router.post("/likes", pCtrl.process.likes);
+
 router.post("/login", pCtrl.process.loginChk)
 
 module.exports = router;
